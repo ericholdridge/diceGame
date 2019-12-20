@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// Game Section
+.game {
+    width: 100%;
+    min-height: 100vh;
+    background: lightblue;
+    .container {
+        padding: 200px 0;
+        .new-game {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+            font-size: 1.1rem;
+            &:focus {
+                outline: none;
+            }
+        }
+        .players {
+            padding: 40px 0;
+            width: 600px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+        .player-score {
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            .player-one-score, .player-two-score {
+                padding: 40px 60px;
+                text-align: center;
+                background: #ccc;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+        .player-diceroll-score {
+            padding: 40px 0;
+            width: 600px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            .player-1-roll-score, .player-2-roll-score {
+                padding: 40px 60px;
+                display: flex;
+                align-items: center;
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+            .dice {
+                img {
+
+                }
+            }
+        }
+        .player-controls {
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            .roll-dice, .hold {
+                padding: 8px 20px;
+                border: none;
+                cursor: pointer;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                &:focus {
+                    outline: none;                }
+            }
+        }
+    }
+}

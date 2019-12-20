@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.game {
+  width: 100%;
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.game .container {
+  padding: 200px 0;
+}
+
+.game .container .new-game {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.game .container .new-game:focus {
+  outline: none;
+}
+
+.game .container .players {
+  padding: 40px 0;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.game .container .player-score {
+  width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game .container .player-score .player-one-score, .game .container .player-score .player-two-score {
+  padding: 40px 60px;
+  text-align: center;
+  background: #ccc;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.game .container .player-diceroll-score {
+  padding: 40px 0;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.game .container .player-diceroll-score .player-1-roll-score, .game .container .player-diceroll-score .player-2-roll-score {
+  padding: 40px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .container .player-diceroll-score .player-1-roll-score p, .game .container .player-diceroll-score .player-2-roll-score p {
+  font-size: 1.2rem;
+}
+
+.game .container .player-controls {
+  width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game .container .player-controls .roll-dice, .game .container .player-controls .hold {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.game .container .player-controls .roll-dice:focus, .game .container .player-controls .hold:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
